@@ -24,20 +24,19 @@ export default function App() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // 🔧 BACKEND CONNECTION FUNCTION 
+  // 🔧 BACKEND CONNECTION FUNCTION
   const sendMessageToBackend = async (userMessage) => {
     try {
       // backend endpoint - URL
-      const BACKEND_URL = "http://127.0.0.1:8000/chat"; 
+      const BACKEND_URL = "https://llm-backend-6b4x.onrender.com/chat";
 
       const response = await fetch(BACKEND_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-        
         },
         body: JSON.stringify({
-          input: userMessage, 
+          input: userMessage,
         }),
       });
 
