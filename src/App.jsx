@@ -9,7 +9,7 @@ export default function App() {
       id: 1,
       type: "bot",
       content:
-        "Hello! I'm DREW GPT, your creative AI assistant. What would you like to explore today?",
+        "Hello! I'm DREW GPT, your creative research assistant. What would you like to explore today?",
       timestamp: new Date().toLocaleTimeString(),
     },
   ]);
@@ -149,7 +149,7 @@ export default function App() {
             </div>
           </div>
           <p className="text-xl text-gray-300 font-medium">
-            Your Creative AI Companion
+            Your Creative Research Companion
           </p>
         </div>
 
