@@ -28,7 +28,7 @@ export default function App() {
   const sendMessageToBackend = async (userMessage) => {
     try {
       // backend endpoint - URL
-      const BACKEND_URL = "https://llm-backend-production-ad8b.up.railway.app/chat";
+      const BACKEND_URL = "https://dreww1011-drewgpt1.hf.space/chat";
 
       const response = await fetch(BACKEND_URL, {
         method: "POST",
